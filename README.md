@@ -1,27 +1,72 @@
-# EmployeeManagementApp
+# Employee Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+The Employee Management System is a web application designed to manage the details of employees within an organization. It's built using Spring Boot for the backend, AngularJS for the frontend, and MySQL as the database. This application allows for easy management of employee records including adding, updating, and deleting employees.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Add New Employee**: Allows the users to add new employees into the system.
+- **List Employees**: Users can view all the employees in the system.
+- **Update Employee**: This feature enables updating existing employee information.
+- **Delete Employee**: Allows for the deletion of employee records.
+- **Search Employee**: Users can search for employees based on various filters.
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Before you begin, ensure you have met the following requirements:
+- JDK 1.8 or later
+- Maven 3.2+
+- MySQL 5.6 or later
+- Node.js and npm (for AngularJS)
 
-## Build
+## Setting Up the Development Environment
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Backend Setup
 
-## Running unit tests
+1. **Clone the repository**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`git clone https://github.com/your-repository/employee_management_system.git`
+cd employee_management_system
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Configure MySQL**
 
-## Further help
+Create a database in MySQL and update `src/main/resources/application.properties` with your MySQL user and password.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database?useSSL=false
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+
+3. **Run the Spring Boot Application**
+
+Use Maven to run the application.
+
+`mvn spring-boot:run`
+
+
+### Frontend Setup
+
+1. **Navigate to the AngularJS App Directory**
+
+`cd path/to/your/angular-app`
+
+2. **Install Dependencies**
+
+`npm install`
+
+3. **Run the AngularJS Application**
+
+`npm start`
+
+
+By default, the AngularJS app will run on `http://localhost:4200`.
+
+## Usage
+
+Once both the backend and frontend are running, navigate to `http://localhost:4200` in your browser to access the Employee Management System.
+
+## Contributing
+
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+Please ensure to update tests as appropriate.
