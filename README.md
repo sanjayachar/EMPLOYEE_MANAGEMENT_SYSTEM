@@ -25,7 +25,9 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository**
 
 `git clone https://github.com/your-repository/employee_management_system.git`
-cd employee_management_system
+
+navigate to emplyeemanager folder so that you can access spring boot application.
+`cd employee_management_system/employeemanager`
 
 
 2. **Configure MySQL**
@@ -43,20 +45,21 @@ Use Maven to run the application.
 
 `mvn spring-boot:run`
 
+By default, the Spring Boot app will run on `http://localhost:8080`.
 
 ### Frontend Setup
 
 1. **Navigate to the AngularJS App Directory**
 
-`cd path/to/your/angular-app`
+`cd employee-management-app`.
 
 2. **Install Dependencies**
 
-`npm install`
+`npm install`.
 
 3. **Run the AngularJS Application**
 
-`npm start`
+`npm start`.
 
 
 By default, the AngularJS app will run on `http://localhost:4200`.
